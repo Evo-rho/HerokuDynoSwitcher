@@ -42,7 +42,7 @@ today = datetime.now()
 # First pair of apps
 print("Checking the conditions for the first app..")
 if(len(FIRST_PROCESSTYPE) != 0 and len(FIRST_A_APIKEY) != 0 and len(FIRST_A_APPNAME) != 0 and len(FIRST_B_APIKEY) != 0 and len(FIRST_B_APPNAME) != 0):
-  if(today.day == 15):
+  if(today.day == 5):
     print("[#1] Changing the dyno to the second acc..")
     heroku_conn = heroku3.from_key(FIRST_A_APIKEY)
     app = heroku_conn.app(FIRST_A_APPNAME)
